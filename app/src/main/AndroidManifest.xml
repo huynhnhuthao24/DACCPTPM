@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doanfinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/beericon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/beerlucky"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoAnFinal">
+        <activity android:name=".AddNote"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+
+        <!--        background  -->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".TodoListActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".About_us"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

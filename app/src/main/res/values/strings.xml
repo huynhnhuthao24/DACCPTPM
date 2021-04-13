@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ProjectFinal</string>
+    <string name="notes">Notes</string>
+    <string name="todo">To do</string>
+    <string name="about_us">About us</string>
+    <string name="exit">Exit</string>
+    <string name="exit_caption">Shutdown warning</string>
+    <string name="exit_content">"Do you want to exit ? "</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="gioithieu">Team 8</string>
+    <string name="gioithieuthanhvien">Team member:  </string>
+
+
+    <string name="title">Title</string>
+
+    <string name="set_date">Set Date</string>
+
+
+    <string name="note">Note</string>
+    <string name="to_do_list">To do list</string>
+    <string name="tasks">Tasks</string>
+
+
+
+    <string name="ttv1">Dang Tuan Duong</string>
+    <string name="ttv2">Tran Hoang Hai Long</string>
+    <string name="ttv3">Huynh Minh Xuan</string>
+    <string name="ttv4">Vo Quoc Hau</string>
+    <string name="ttv5">Nguyen Nhat Quang</string>
+    <string name="input_sth">... Input Something ...</string>
+    <string name="save">Save</string>
+    <string name="new_task">New Task</string>
+    <string name="msg">Successfully add to notes</string>
+</resources>
