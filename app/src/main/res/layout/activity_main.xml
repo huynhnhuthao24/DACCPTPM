@@ -1,40 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnNote"
-        android:layout_width="267dp"
-        android:layout_height="70dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="@color/note"
-        android:text="@string/note"
-        android:textSize="30sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:src="@drawable/logo_eat_it"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="todo"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/txtSlogan"
+            android:text="@string/Slogan"
+            android:textColor="@android:color/white"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_margin="50dp"
-        android:src="@drawable/iconcat" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Sign Up"
+            android:textColor="@android:color/white"
+            app:buttonColor="@color/btnSignUp"
+            app:cornerRadius="4dp"
+            app:shadowColor="@android:color/black"
+            android:background="#6E4C9E"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp" />
 
-    <Button
-        android:id="@+id/btnTask"
-        android:layout_width="247dp"
-        android:layout_height="85dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/task"
-        android:text="@string/to_do_list"
-        android:textSize="30sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignIn"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:buttonColor="@color/btnSignActive"
+            app:shadowColor="@android:color/black"
+            android:background="#6E4C9E"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"/>
 
+    </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
