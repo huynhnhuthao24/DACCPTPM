@@ -11,13 +11,16 @@ public class Notes {
         this.content = content;
     }
 
-    public Notes() {
+    public Notes() 
+{
     }
-    public int getId() {
+    public int getId() 
+	{
         return id;
     }
 
-    public String getNote() {
+    public String getNote() 
+	{
         return (note);
     }
 
@@ -38,6 +41,6 @@ public class Notes {
     }
 
     public String toString(){
-        return(getNote());//tra ve ten title
+        return(getNote()); //tra ve ten title
     }
 }

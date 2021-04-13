@@ -5,30 +5,37 @@ public class TaskModel {
 
     private String task;
 
-    public TaskModel() {
+    public TaskModel() 
+{
     }
 
-    public int getId() {
+    public int getId() 
+{
         return id;
     }
 
-    public int getStatus() {
+    public int getStatus() 
+{
         return status;
     }
 
-    public String getTask() {
+    public String getTask() 
+{
         return task;
     }
 
-    public void setId(int id) {
+    public void setId(int id) 
+{
         this.id = id;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(int status) 
+{
         this.status = status;
     }
 
-    public void setTask(String task) {
+    public void setTask(String task) 
+{
         this.task = task;
     }
 }
